@@ -76,7 +76,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-
       {/* Bottom spacing */}
       <div className="mt-32 sm:mt-40" />
     </div>
