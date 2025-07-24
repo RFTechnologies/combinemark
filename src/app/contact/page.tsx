@@ -4,28 +4,23 @@ import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Get in touch with our team to discuss how we can help your business grow.',
+  description: 'you can Get in Touch with us for any kind of Query you can call and visit our branch office on specific working hours or email us anytime. We will reply you back and follow us for new and latest updates.',
 }
 
 const offices = [
   {
-    city: 'New York',
+    city: 'Head Office Lahore',
     address: ['123 Marketing Street', 'New York, NY 10001'],
-    phone: '+1 (555) 123-4567',
-    email: 'nyc@combinemarketing.com',
+    phone: '+92 300 1115722',
+    email: 'info@combinemarketings.com',
   },
   {
-    city: 'London',
-    address: ['456 Agency Lane', 'London, UK SW1A 1AA'],
-    phone: '+44 20 7123 4567',
-    email: 'london@combinemarketing.com',
+    city: 'Rawalpindi Office',
+    address: ['Taha Mall, Office #10, 3rd Floor, Khawaja Corporation Chowk, Defence Rd, Rawalpindi, 46000'],
+    phone: '+92 300 8472205' , 
+    email: 'info@combinemarketings.com',
   },
-  {
-    city: 'Singapore',
-    address: ['789 Business Avenue', 'Singapore 018989'],
-    phone: '+65 6789 0123',
-    email: 'singapore@combinemarketing.com',
-  },
+
 ]
 
 export default function Contact() {
