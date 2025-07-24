@@ -21,9 +21,9 @@ export default function Home() {
           <p className="text-lg mb-8">Our goal then and now is to provide quality on time projects.</p>
           <Link
             href="/contact"
-            className="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition"
+            className="bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition"
           >
-            GET IN TOUCH1
+            GET IN TOUCH
           </Link>
         </div>
       </section>
