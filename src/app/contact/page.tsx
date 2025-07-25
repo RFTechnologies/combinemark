@@ -2,9 +2,10 @@ import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline
 import type { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
 
+// Test change to verify hot reload
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'you can Get in Touch with us for any kind of Query you can call and visit our branch office on specific working hours or email us anytime. We will reply you back and follow us for new and latest updates.',
+  description: 'You can Get in Touch with us for any kind of Query you can call and visit our branch office on specific working hours or email us anytime. We will reply you back and follow us for new and latest updates.',
 }
 
 const offices = [

@@ -14,14 +14,15 @@ export default function Home() {
           priority
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-          <h1 className="text-6xl font-bold mb-6">COMBINE MARKETING</h1>
-          <div className="bg-blue-600 text-white px-8 py-3 rounded-full mb-4">
+          <h1 className="text-6xl font-bold mb-6" data-aos="fade-down">COMBINE MARKETING</h1>
+          <div className="bg-blue-600 text-white px-8 py-3 rounded-full mb-4" data-aos="fade-up" data-aos-delay="200">
             FIND ALL GOOD PROJECTS IN ONE PLACE
           </div>
-          <p className="text-lg mb-8">Our goal then and now is to provide quality on time projects.</p>
+          <p className="text-lg mb-8" data-aos="fade-up" data-aos-delay="400">Our goal then and now is to provide quality on time projects.</p>
           <Link
             href="/contact"
             className="bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition"
+            data-aos="fade-up" data-aos-delay="600"
           >
             GET IN TOUCH
           </Link>
@@ -30,14 +31,14 @@ export default function Home() {
 
       {/* Welcome Section */}
       <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div>
+        <div data-aos="fade-right">
           <h2 className="text-3xl font-bold mb-4">WELCOME TO THE COMBINE MARKETING</h2>
           <h3 className="text-xl mb-6">Where We Build Your Visions</h3>
           <p className="text-gray-600 mb-6">
             Search for Property in Pakistan right here. If you are looking to buy, sell and Rent Properties Specifically researched information in Pakistan then Combine Marketing's is the ideal Platform that will help you make the right choice by giving you valuable options from reliable sources. Find properties in Pakistan that will match your property requirements. The property that you have been Dreaming of is now just a click away.
           </p>
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-delay="200">
           <Image
             src="/image-1.jpg"
             alt="Welcome Image"
@@ -51,7 +52,7 @@ export default function Home() {
       {/* Buy and Sell Section */}
       <section className="py-16 px-4 md:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div>
+          <div data-aos="fade-right">
             <Image
               src="/image-2.jpg"
               alt="Buy and Sell"
@@ -60,7 +61,7 @@ export default function Home() {
               className="rounded-lg shadow-lg"
             />
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-delay="200">
             <h2 className="text-3xl font-bold mb-6">BUY AND SELL</h2>
             <p className="text-gray-600">
               Combine Marketing is Pakistan's most comprehensive property website portal finder focused on improving the visual property viewing experience of users to help them make better-informed decisions regarding capital investment in the real estate sector.
@@ -71,13 +72,13 @@ export default function Home() {
 
       {/* Motto Section */}
       <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div>
+        <div data-aos="fade-right">
           <h2 className="text-3xl font-bold mb-6">OUR COMBINE MARKETING MOTTO</h2>
           <p className="text-gray-600">
             Our Combine Marketing motto is simple "Keep clients happy, always be sincere & provide quality service as clients trust is our top priority".
           </p>
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-delay="200">
           <Image
             src="/image-3.jpg"
             alt="Motto Image"
@@ -97,13 +98,14 @@ export default function Home() {
           className="object-cover brightness-50"
         />
         <div className="relative max-w-7xl mx-auto text-center text-white px-4">
-          <h2 className="text-4xl font-bold mb-6">GET YOUR FREE CONSULTATION</h2>
-          <p className="mb-8 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold mb-6" data-aos="fade-down">GET YOUR FREE CONSULTATION</h2>
+          <p className="mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
             Combine Marketing is a Property Portal in Pakistan. We have a unique portal for Real-estate agents in Pakistan. Our focus is land selling and buying. We give platform to all real-estate agents or Real-estate agency in Pakistan.
           </p>
           <Link
             href="/contact"
             className="bg-blue-500 text-white px-8 py-3 rounded hover:bg-blue-600 transition inline-block"
+            data-aos="fade-up" data-aos-delay="400"
           >
             BOOK AN APPOINTMENT
           </Link>
@@ -113,7 +115,7 @@ export default function Home() {
       {/* CEO Message Section */}
       <section className="py-16 px-4 md:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
+          <div data-aos="fade-right">
             <Image
               src="/ceo.jpeg"
               alt="CEO"
@@ -122,7 +124,7 @@ export default function Home() {
               className="rounded-full"
             />
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-delay="200">
             <h2 className="text-3xl font-bold mb-2">MESSAGE FROM CEO</h2>
             <h3 className="text-2xl font-bold mb-6">COMBINE MARKETING'S</h3>
             <h4 className="text-xl text-blue-600 mb-4">TAYYAB ANWAR RAO</h4>
