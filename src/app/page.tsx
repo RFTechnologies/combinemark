@@ -5,15 +5,15 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-screen">
-        <Image
-          src="/hero-banner.jpg"
-          alt="Hero Background"
-          fill
-          className="object-cover brightness-50"
-          priority
-        />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+      <section 
+        className="relative h-screen bg-fixed bg-cover bg-center"
+        style={{
+          backgroundImage: 'url("/hero-banner.jpg")',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10">
           <h1 className="text-6xl font-bold mb-6" data-aos="fade-down">COMBINE MARKETING</h1>
           <div className="bg-blue-600 text-white px-8 py-3 rounded-full mb-4" data-aos="fade-up" data-aos-delay="200">
             FIND ALL GOOD PROJECTS IN ONE PLACE
@@ -30,7 +30,7 @@ export default function Home() {
       </section>
 
       {/* Welcome Section */}
-      <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 py-4">
         <div data-aos="fade-right">
           <h2 className="text-3xl font-bold mb-4">WELCOME TO THE COMBINE MARKETING</h2>
           <h3 className="text-xl mb-6">Where We Build Your Visions</h3>
@@ -90,14 +90,15 @@ export default function Home() {
       </section>
 
       {/* Consultation Section */}
-      <section className="relative py-24">
-        <Image
-          src="/image-4.jpg"
-          alt="Consultation Background"
-          fill
-          className="object-cover brightness-50"
-        />
-        <div className="relative max-w-7xl mx-auto text-center text-white px-4">
+      <section 
+        className="relative py-24 bg-fixed bg-cover bg-center"
+        style={{
+          backgroundImage: 'url("/image-4.jpg")',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="relative max-w-7xl mx-auto text-center text-white px-4 z-10">
           <h2 className="text-4xl font-bold mb-6" data-aos="fade-down">GET YOUR FREE CONSULTATION</h2>
           <p className="mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
             Combine Marketing is a Property Portal in Pakistan. We have a unique portal for Real-estate agents in Pakistan. Our focus is land selling and buying. We give platform to all real-estate agents or Real-estate agency in Pakistan.
@@ -115,14 +116,39 @@ export default function Home() {
       {/* CEO Message Section */}
       <section className="py-16 px-4 md:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div data-aos="fade-right">
-            <Image
-              src="/ceo.jpeg"
-              alt="CEO"
-              width={400}
-              height={400}
-              className="rounded-full"
-            />
+          <div data-aos="fade-right" className="relative">
+            <div className="absolute inset-0 -z-10">
+              <svg 
+                viewBox="0 0 200 200" 
+                className="w-full h-full animate-blob"
+                style={{ 
+                  filter: 'blur(25px)',
+                  transform: 'scale(1.5)',
+                  opacity: 0.7
+                }}
+              >
+                <path
+                  fill="#60A5FA"
+                  d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.5,90,-16.3,88.5,-0.9C87,14.5,81.4,28.9,73.6,42.4C65.8,55.9,55.9,68.4,42.2,76.5C28.5,84.5,11.8,88.1,-2.4,91.5C-16.5,94.8,-33,97.8,-47.1,91.9C-61.2,86,-72.9,71.2,-79.8,55.4C-86.7,39.7,-88.9,19.8,-88.6,0.1C-88.4,-19.5,-85.8,-39,-76.2,-53.2C-66.6,-67.4,-50,-76.2,-34.1,-82.5C-18.2,-88.7,-3,-92.4,11.9,-89.6C26.8,-86.8,53.6,-77.5,70.3,-70.1Z"
+                  transform="translate(100 100)"
+                />
+              </svg>
+            </div>
+            <div className="relative">
+              <Image
+                src="/ceo.jpeg"
+                alt="CEO"
+                width={400}
+                height={400}
+                className="rounded-full shadow-xl"
+              />
+              <div 
+                className="absolute inset-0 rounded-full"
+                style={{
+                  background: 'linear-gradient(45deg, rgba(96, 165, 250, 0.2), rgba(96, 165, 250, 0))',
+                }}
+              ></div>
+            </div>
           </div>
           <div data-aos="fade-left" data-aos-delay="200">
             <h2 className="text-3xl font-bold mb-2">MESSAGE FROM CEO</h2>
